@@ -1,11 +1,16 @@
 body{
     background-color: #000!important;
     font-family: 'Montserrat', sans-serif!important;
-    &.showBackupImg{
-        background-image: url('../images/backup_image.jpg');
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    @media screen and (max-width: 767px){  
+        &.showBackupImg{
+            background-image: url('../images/backup_image.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        video{
+            display: none!important;
+        }
     }
 } 
 
@@ -15,7 +20,7 @@ h1,h2,h3,h4,h5,h6{
     @media screen and (max-width: 767px){
         font-size: 2rem!important;
     }
-}
+} 
 
 .btn{
     background-color: transparent!important;
