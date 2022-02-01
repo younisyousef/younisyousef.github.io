@@ -3,7 +3,7 @@ body{
     font-family: 'Montserrat', sans-serif!important;
     @media screen and (max-width: 767px){  
         &.showBackupImg{
-            background-image: url('../images/backup_image.jpg');
+            background-image: url('../../assets/images/backup_image.jpg');
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
