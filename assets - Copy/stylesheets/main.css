@@ -1,0 +1,149 @@
+body {
+  background-color: #000 !important;
+  font-family: "Montserrat", sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 4rem !important;
+}
+@media screen and (max-width: 767px) {
+  h1, h2, h3, h4, h5, h6 {
+    font-size: 2rem !important;
+  }
+}
+
+.btn {
+  background-color: transparent !important;
+  border: 3px solid #fff !important;
+  text-transform: uppercase !important;
+  border-radius: 0px !important;
+  font-weight: 700 !important;
+  letter-spacing: 1.15px;
+  font-size: 1.1rem !important;
+  padding: 10px 20px !important;
+}
+@media screen and (max-width: 767px) {
+  .btn {
+    font-size: 0.75rem !important;
+  }
+}
+.btn:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.mobileDrawerToggle {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+}
+.mobileDrawerToggle .navToggle {
+  background-color: #424242;
+  color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid transparent;
+  width: 50px;
+  height: 50px;
+}
+.mobileDrawerToggle .navToggle:hover {
+  cursor: pointer;
+}
+.mobileDrawerToggle .navToggle .fa-times {
+  display: none;
+}
+.mobileDrawerToggle .navToggle.open .fa-times {
+  display: block;
+}
+.mobileDrawerToggle .navToggle.open .fa-bars {
+  display: none;
+}
+
+.mobileDrawer {
+  transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  margin-left: -100%;
+  overflow-x: hidden;
+}
+.mobileDrawer .navLinkItems {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  padding-top: 80px;
+}
+.mobileDrawer .navLinkItems li {
+  display: inline;
+}
+.mobileDrawer .navLinkItems li a {
+  padding: 25px;
+  padding-left: 15px;
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+.mobileDrawer.open {
+  margin-left: 0px;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999998;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+#header .container-fluid {
+  padding: 0px 50px;
+}
+#header .container-fluid .navLinkItems {
+  list-style: none;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+#header .container-fluid .navLinkItems li {
+  display: inline;
+}
+#header .container-fluid .navLinkItems li a {
+  padding: 36px 25px;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+}
+#header .darkLogo {
+  display: none;
+}
+
+.about-body #header:hover, .projects-body #header:hover {
+  cursor: pointer;
+}
+.about-body #header:hover, .about-body #header.show, .about-body #header.sticky, .projects-body #header:hover, .projects-body #header.show, .projects-body #header.sticky {
+  backdrop-filter: blur(8px);
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.about-body #header:hover .darkLogo, .about-body #header.show .darkLogo, .about-body #header.sticky .darkLogo, .projects-body #header:hover .darkLogo, .projects-body #header.show .darkLogo, .projects-body #header.sticky .darkLogo {
+  display: inline-block !important;
+}
+.about-body #header:hover .lightLogo, .about-body #header.show .lightLogo, .about-body #header.sticky .lightLogo, .projects-body #header:hover .lightLogo, .projects-body #header.show .lightLogo, .projects-body #header.sticky .lightLogo {
+  display: none;
+}
+.about-body #header:hover:hover, .about-body #header:hover.show, .about-body #header.show:hover, .about-body #header.show.show, .about-body #header.sticky:hover, .about-body #header.sticky.show, .projects-body #header:hover:hover, .projects-body #header:hover.show, .projects-body #header.show:hover, .projects-body #header.show.show, .projects-body #header.sticky:hover, .projects-body #header.sticky.show {
+  background-color: #ffffff;
+}
+.about-body #header:hover a, .about-body #header:hover i, .about-body #header.show a, .about-body #header.show i, .about-body #header.sticky a, .about-body #header.sticky i, .projects-body #header:hover a, .projects-body #header:hover i, .projects-body #header.show a, .projects-body #header.show i, .projects-body #header.sticky a, .projects-body #header.sticky i {
+  color: #000000 !important;
+}
+
+/*# sourceMappingURL=main.css.map */
