@@ -1,0 +1,43 @@
+.projects-body{
+    background-color: #424242!important;
+
+    h1{
+        font-weight: 500;
+    }
+
+    h2{
+        font-weight: 500;
+        font-size: 2rem!important;
+        @media screen and (max-width: 767px){
+            font-size: 1.5rem!important;
+        }
+    }
+
+    .bg-white{
+        border-radius: 15px;
+        @media screen and (min-width: 767px){
+            border-radius: 25px;
+        }
+    }
+
+    .projectsContainer{
+        padding-top: 80px;
+        @media screen and (min-width: 767px){
+            padding-top: 150px;
+        }
+
+        .caption{
+            a{
+                color: #212529;
+            }
+            margin-top: 1rem;
+        }
+    }
+
+    .mobileDrawerToggle{
+        .navToggle{
+            background-color: #c7c7c7;
+        }
+    }
+
+} 

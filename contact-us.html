@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en" class = "index">
+
+<!--
+WRITTEN BY: Younis Yousef
+EMAIL: yiyousef@uci.edu
+-->
+
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Your name here">
+  <meta name="description" content="description of your page">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="assets/images/logo2.png">
+  <link rel = "stylesheet" href = "assets/stylesheets/main.css">
+  <link rel = "stylesheet" href = "assets/stylesheets/contact-us.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Younis' Portfolio</title>
+</head>
+<body class = "contactBody">
+  <div id = "header" class = "desktopNav d-none d-lg-block">
+      <div class = "container-fluid">
+          <div class = "row">
+            <div class = "col-3 d-flex align-items-center">
+              <ul class = "navLinkItems">
+                <li class = "navItem">
+                  <a class = "p-0" href = "./index.html">
+                    <img alt = "Dark logo" class = "darkLogo" style = "height:80px;" src = "assets/images/logo1.png">
+                    <img alt = "Light logo" class = "lightLogo" style = "height:80px;" src = "assets/images/logo2.png">
+                  </a>
+              </li>
+              </ul>
+            </div>
+              <div class = "col-9 d-flex align-items-center justify-content-end">
+                  <ul class = "navLinkItems">
+                      <li class = "navItem"><a href = "./index.html">Home</a></li>
+                      <li class = "navItem"><a href = "./about.html">About</a></li>
+                      <li class = "navItem"><a href = "./projects.html">Projects</a></li>
+                      <li class = "navItem"><a href = "assets/pdfs/resume.pdf" target = "_blank">Resume</a></li>
+                      <li class = "navItem"><a href = "./contact-us.html">Contact</a></li>
+                  </ul>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- mobile navigation -->
+  <div class = "mobileDrawerToggle d-lg-none">
+    <button class = "navToggle"><span class="fas fa-bars"></span><span class="fas fa-times"></span></button>
+  </div>
+
+  <div class = "mobileDrawer">
+    <ul class = "navLinkItems">
+        <li class = "navItem"><a href = "./index.html">Home</a></li>
+        <li class = "navItem"><a href = "./about.html">About</a></li>
+        <li class = "navItem"><a href = "./projects.html">Projects</a></li>
+        <li class = "navItem"><a href = "assets/pdfs/resume.pdf" target = "_blank">Resume</a></li>
+        <li class = "navItem"><a href = "./contact-us.html">Contact</a></li>
+    </ul>
+  </div>
+
+  
+
+    <section id="contactForm">
+        <div class="container">
+            <div class="formContainer bg-white p-lg-5 p-3">
+                <h1>Contact Me</h1>
+                <form id = "contact-form"> 
+                    <div id="newComment">
+                    <div class="row">
+                        <div class="col-12">
+                        <label for="CommentAuthor">name</label>
+                        <input type="text" name="name" id="CommentAuthor" value="" autocapitalize="words">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                        <label for="CommentEmail">email</label>
+                        <input type="email" name="email" id="CommentEmail" value="" autocapitalize="off">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                        <label for="CommentBody">message</label>
+                        <textarea name="message" id="CommentBody"></textarea>
+                        </div>
+                    </div>
+                    <input type="submit" value="Send Message" class="btn submitBtn btnMain mb-5">
+                    </div>                 
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  
+
+  <script>
+    $(document).ready(function(){
+      //function that applies sticky class once the user has scrolled down the page
+      var stickyNav = function(){
+          var scrollTop = $(window).scrollTop();
+          if (scrollTop > 100) { 
+              $('#header').addClass('sticky');
+          } else {
+              $('#header').removeClass('sticky'); 
+          }
+      };
+
+      stickyNav();
+
+      $(window).scroll(function() {
+          stickyNav();
+      });
+
+      //open mobile drawer when bars button is clicked
+      $(".navToggle").click(function(){
+        $(this).toggleClass("open");
+        $(".mobileDrawer").toggleClass("open");
+      });
+
+      //init email js and send form on submit
+      emailjs.init('user_YQKroXXAwI6J8YN2x4Gyz');
+      const serviceID = 'default_service';
+      const templateID = 'template_axmoq0m';
+      $("#contact-form").submit(function(e){
+        console.log("ok");
+        e.preventDefault();
+        $(".submitBtn").attr("value", "Sending...");
+        emailjs.sendForm(serviceID, templateID, this).then(() => {
+          $(".submitBtn").attr("value", "Sent!");
+        });
+      
+      });
+      
+    });
+
+  </script>
+</body>
+</html>
