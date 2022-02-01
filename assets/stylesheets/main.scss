@@ -1,6 +1,12 @@
 body{
     background-color: #000!important;
     font-family: 'Montserrat', sans-serif!important;
+    &.showBackupImg{
+        background-image: url('../../images/backup_image.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 } 
 
 h1,h2,h3,h4,h5,h6{
