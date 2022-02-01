@@ -104,7 +104,7 @@
   background-color: transparent;
   margin-top: 7rem;
 }
-.about-body #imagemodal .modal-content button {
+.about-body #imagemodal .modal-content .close {
   background-color: transparent;
   border: 0px !important;
   position: absolute;
@@ -117,6 +117,9 @@
 }
 .about-body #imagemodal .closeIcon {
   color: #ffffff;
+}
+.about-body #imagemodal .closeIcon:hover {
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=about.css.map */

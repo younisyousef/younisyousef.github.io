@@ -119,7 +119,7 @@
             background-color: transparent;
             margin-top: 7rem;
     
-            button{
+            .close{ 
                 background-color: transparent;
                 border: 0px!important;
                 position: absolute;
@@ -135,6 +135,9 @@
 
         .closeIcon{
             color: #ffffff;
+            &:hover{
+                cursor: pointer;
+            }
         }
     }
-} 
+}  
