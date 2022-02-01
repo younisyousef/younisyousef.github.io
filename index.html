@@ -84,6 +84,11 @@ EMAIL: yiyousef@uci.edu
 
   <script>
     $(document).ready(function(){
+      $("video").on("suspend", function(){
+        $("video").hide();
+        $("body").addClass("showBackupImg");
+      });
+
       //function that applies sticky class once the user has scrolled down the page
       var stickyNav = function(){
           var scrollTop = $(window).scrollTop();
